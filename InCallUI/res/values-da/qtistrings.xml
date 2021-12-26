@@ -31,59 +31,71 @@
   -->
 <!-- The xml contains Qti specific resource strings neede for any value added features. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Call substate label -->
-  <!-- Call substate label for call resumed -->
-  <!-- Call substate label for call connected suspended (audio) -->
-  <!-- Call substate label for call connected suspended (video) -->
-  <!-- Call substate label for avp retry -->
-  <!-- Video quality changed message -->
-  <!-- Video quality High -->
-  <!-- Video quality Medium -->
-  <!-- Video quality Low -->
-  <!-- Video quality Unknown -->
-  <!-- Message indicating that Video Started flowing for IMS-VT calls -->
-  <!-- Message indicating that Video Stopped flowing for IMS-VT calls -->
-  <!-- Message indicating that camera failure has occurred for the selected camera and
-         as result camera is not ready -->
-  <!-- Message indicating that camera is ready/available -->
-  <!-- Message indicating unknown call session event -->
-  <!-- Message indicating data usage -->
-  <!-- In-call screen: Modify Call Options for IMS call -->
-  <!-- Modify call error cause -->
-  <!-- Description of the call transfer related strings [CHAR LIMIT=NONE] -->
-  <!-- Text for the onscreen "blind transfer" button -->
-  <!-- Text for the onscreen "assured transfer" button -->
-  <!-- Text for the onscreen "consultative transfer" button -->
-  <!-- Message indicating video calls not allowed if user enabled TTY Mode -->
-  <!-- Description of the deflect target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
-  <!-- Message indicating call failed due to handover not feasible -->
-  <!-- Text for the onscreen "Add Participant" button -->
-  <!-- Title of the IMS to CS redial dialog -->
-  <!-- Message text of the IMS to CS redial dialog -->
-  <!-- Session modify cause unspecified -->
-  <!-- Session modify cause code upgrade local request -->
-  <!-- Session modify cause code upgrade remote request -->
-  <!-- Session modify cause code downgrade local request -->
-  <!-- Session modify cause code downgrade remote request -->
-  <!-- Session modify cause code downgrade rtp timeout -->
-  <!-- Session modify cause code downgrade qos -->
-  <!-- Session modify cause code downgrade packet loss -->
-  <!-- Session modify cause code downgrade low thrput -->
-  <!-- Session modify cause code downgrade thermal mitigation -->
-  <!-- Session modify cause code downgrade lipsync -->
-  <!-- Session modify cause code downgrade generic error -->
-  <!-- In-call screen: status label for an incoming conference call [CHAR LIMIT=25] -->
-  <!-- In-call screen: status label for an incoming video conference call [CHAR LIMIT=25] -->
-  <!-- The "label" of the in-call Notification for an incoming conference ringing call. [CHAR LIMIT=60] -->
-  <!-- Title displayed in the overlay for incoming conference calls which include the name of the provider.
-         [CHAR LIMIT=40] -->
-  <!-- Message indicating call failed due to low battery -->
-  <!-- VoWifi call quality indicators -->
-  <!-- Title for low battery alert dialogue -->
-  <!-- Message text of the low battery alert dialog in cases video call doesn't have downgrade capabilities -->
-  <!-- Message text of the low battery alert dialog for MO/MT video calls -->
-  <!-- No option of the low battery alert dialog for MO/MT Video calls -->
-  <!-- International prefix source-->
-  <!-- International prefix converted value-->
-  <!-- Pop up menu options for picture mode -->
+    <string name="call_substate_label"><xliff:g id="id">%1$s</xliff:g>: Opkalds understatus:\u000a <xliff:g id="state" example="Resumed">%2$s</xliff:g></string>
+    <string name="call_substate_call_resumed">Genoptaget</string>
+    <string name="call_substate_connected_suspended_audio">Forbundet, men lyd er suspenderet</string>
+    <string name="call_substate_connected_suspended_video">Forbundet, men video er suspenderet</string>
+    <string name="call_substate_avp_retry">Opfanger videokvalitet\u2026</string>
+    <string name="video_quality_changed"><xliff:g id="id">%1$s</xliff:g>: Video-kvalitet ændret til <xliff:g id="quality" example="high">%2$s</xliff:g></string>
+    <string name="video_quality_high">høj</string>
+    <string name="video_quality_medium">middel</string>
+    <string name="video_quality_low">lav</string>
+    <string name="video_quality_unknown">ukendt</string>
+    <string name="player_started">Afspiller startet</string>
+    <string name="player_stopped">Afspiller stoppet</string>
+    <string name="camera_not_ready">Kamera er ikke klar</string>
+    <string name="camera_ready">Kamera er klar</string>
+    <string name="unknown_call_session_event">Ukendt opkaldssession-begivenhed</string>
+    <string name="wlan_data_usage_label">Wi-Fi dataforbrug: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="lte_data_usage_label">4G-dataforbrug: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="modify_call_option_title">Vælg opkaldstype</string>
+    <string name="modify_call_option_vt">To-vejs video</string>
+    <string name="modify_call_option_vt_tx">Video-transmission</string>
+    <string name="modify_call_option_vt_rx">Video-modtagelse</string>
+    <string name="modify_call_option_voice">Kun lyd</string>
+    <string name="modify_call_failed_due_to_low_battery">Modifikation af opkald fejlede, pga. lavt batteriniveau.</string>
+    <string name="qti_ims_transfer_num_error">Nummer ikke indstillet. Tildel nummeret via IMS-indstillinger og omgør.</string>
+    <string name="qti_ims_transfer_request_error">Opkaldsoverførselsanmodning havde fejlet.</string>
+    <string name="qti_ims_transfer_request_success">Opkaldsoverførselsanmodning er lykkedes.</string>
+    <string name="qti_ims_onscreenBlindTransfer">Blind overførsel</string>
+    <string name="qti_ims_onscreenAssuredTransfer">Forvisset overførsel</string>
+    <string name="qti_ims_onscreenConsultativeTransfer">Konsultativ overførsel</string>
+    <string name="video_call_not_allowed_if_tty_enabled">Deaktivér venligst TTY-tilstand, for at opgradere til videoopkald.</string>
+    <string name="qti_description_target_deflect">Afled</string>
+    <string name="qti_description_deflect_error">Nummer ikke indstillet. Tildel nummeret via IMS-indstillinger og omgør.</string>
+    <string name="qti_description_deflect_service_error">Opkaldsafledningstjeneste understøttes ikke.</string>
+    <string name="call_failed_ho_not_feasible">Opkald blev afsluttet, da 4G til 3G/2G-overdragelse ikke var hensigtsmæssigt.</string>
+    <string name="onscreenAddParticipant">Tilføj deltager</string>
+    <string name="cs_redial_option">Genkaldsvalgmulighed</string>
+    <string name="cs_redial_msg">Ude af stand til at foretage et IMS Videoopkald, genkald som ikke-IMS lydopkald?</string>
+    <string name="session_modify_cause_upgrade_local_request">Opkald opgraderet efter bruger-anmodning</string>
+    <string name="session_modify_cause_upgrade_remote_request">Opkald opgraderet efter fjernbruger-anmodning</string>
+    <string name="session_modify_cause_downgrade_local_request">Opkald degraderet efter bruger-anmodning</string>
+    <string name="session_modify_cause_downgrade_remote_request">Opkald degraderet efter fjernbruger-anmodning</string>
+    <string name="session_modify_cause_downgrade_rtp_timeout">Opkald degraderet pga. RTP-tidsudløb</string>
+    <string name="session_modify_cause_downgrade_qos">Opkald degraderet pga. kvalitet af tjeneste</string>
+    <string name="session_modify_cause_downgrade_packet_loss">Opkald degraderet pga. pakketab</string>
+    <string name="session_modify_cause_downgrade_low_thrput">Opkald degraderet pga. lav gennemstrømning</string>
+    <string name="session_modify_cause_downgrade_thermal_mitigation">Opkald degraderet pga. termisk mitigation</string>
+    <string name="session_modify_cause_downgrade_lipsync">Opkald degraderet pga. synkroniseringsproblemer</string>
+    <string name="session_modify_cause_downgrade_generic_error">Opkald degraderet pga. generisk fejl</string>
+    <string name="card_title_incoming_conf_call">Indgående gruppeopkald</string>
+    <string name="card_title_incoming_video_conf_call">Indgående video-gruppeopkald</string>
+    <string name="notification_incoming_conf_call">Indgående gruppeopkald</string>
+    <string name="incoming_conf_via_template">Indgående gruppe-opkald via <xliff:g id="provider_name">%s</xliff:g></string>
+    <string name="call_failed_due_to_low_battery">Opkald har fejlet pga. lavt batteriniveau</string>
+    <string name="vowifi_call_quality_good">God lydkvalitet</string>
+    <string name="vowifi_call_quality_fair">Rimelig lydkvalitet</string>
+    <string name="vowifi_call_quality_poor">Dårlig lydkvalitet</string>
+    <string name="low_battery">Lavt Batteriniveau-Advarsel</string>
+    <string name="low_battery_hangup_msg">Vil du lægge røret på?</string>
+    <string name="low_battery_msg">Dit batteriniveau er under 15%. Ønsker du at fortsætte med videoopkaldet, eller konvertere det til et lydopkald?</string>
+    <string name="low_battery_convert">Konvertér</string>
+    <string name="video_call">Videoopkald</string>
+    <string name="video_call_cannot_upgrade">Kan ikke acceptere videoopkald, på nuværende tidspunkt</string>
+    <string name="video_call_picture_mode_menu_title">Vælg billed-tilstand</string>
+    <string name="video_call_picture_mode_preview_video">Kamera-forhåndsvisning</string>
+    <string name="video_call_picture_mode_incoming_video">Indgående video</string>
+    <string name="video_call_picture_mode_cancel_option">Afbryd</string>
+    <string name="video_call_picture_mode_save_option">Gem</string>
 </resources>
